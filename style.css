@@ -1,0 +1,148 @@
+/* 
+title
+description
+Dwayne Hendricks, Oct 26
+additional comments
+*/
+
+
+body {
+
+        font-family: 'Friday13', Times New Roman, Times, serif;
+      background-color: #D991BA;
+      text-align: center;
+      margin: 0;
+      padding: 3;
+    }
+
+
+
+/* Center the image properly */
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-family: 'Friday13', Times New Roman, Times, serif;
+  font-size: 65px; /* Absolute size */
+  text-align: center;
+}
+@font-face {
+  font-family: 'Friday13';
+  src: url('Friday13BonusNFI.ttf')
+}
+h2 {
+  font-family: 'Friday13', Times New Roman, Times, serif;
+}
+@font-face {
+  font-family: 'Friday13';
+  src: url('Friday13BonusNFI.ttf');
+}
+
+/*==========navigation============== */
+
+    nav {
+      background-color: rgb(13, 113, 55);
+      padding: 10px 0;
+     /*flexible box layout see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
+      display: flex;
+     /* align items along the main axis of a flex container */
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+      justify-content: center;
+
+     /*define the spacing between rows and columns in layout models */
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/gap*/
+      gap: 10px;
+    }
+
+/* default navigation */
+    nav button {
+      background-color: #83695E;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+        
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
+      border-radius: 5px;
+    }
+
+/* navigation button hover style */
+    nav button:hover {
+      background-color: #F4D02E;
+    }
+
+/* active page button */
+    nav button.active {
+      background-color: #D991BA;
+    }
+
+div {
+    text-align: left;
+}
+
+#musicControls {
+  padding: 12px 16px;
+  background-color: #D991BA;
+}
+
+.music-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid #3f3f3f;
+  border-radius: 999px;
+  background-color: #272727;
+  color: #f1f1f1;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.music-toggle:hover {
+  background-color: #3f3f3f;
+  border-color: #5a5a5a;
+}
+
+.music-toggle:focus-visible {
+  outline: 2px solid #f1f1f1;
+  outline-offset: 3px;
+}
+
+.music-toggle[aria-pressed="true"] .music-toggle__icon {
+  color: #ff4e45;
+}
+
+.music-toggle__icon {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+/*==========content============== */
+    .page {
+      display: none;
+      padding: 40px;
+    }
+
+    .page p {
+      text-align: center;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+       html,
+    body {
+      cursor: url("mouse.png") 16 16, crosshair;
+    }
+
+    /* Keep the crosshair on buttons and inputs */
+    button,
+    input,
+    a {
+      cursor: url("mouse.png") 16 16, crosshair !important;

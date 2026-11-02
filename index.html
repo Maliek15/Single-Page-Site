@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Title
+Description
+Dwayne Hendricks, Oct 26
+
+credits or additional comments
+// -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diário</title>
+ <link rel="stylesheet" href="style.css" />
+ <link rel="icon" type="image/png" href="favicon-32x32.png" />
+</head>
+<body>
+
+  <div id="musicControls">
+    <button id="musicButton" class="music-toggle" type="button" aria-pressed="false">
+      <span class="music-toggle__icon" aria-hidden="true">▶</span>
+      <span class="music-toggle__label">Play music</span>
+    </button>
+    <audio id="backgroundMusic" loop>
+      <source src="Ambient.mp3" type="audio/mpeg" />
+      Your browser does not support audio.
+    </audio>
+  </div>
+
+  <nav>
+    <button data-page="home" class="active">Home</button>
+    <button data-page="about">About</button>
+    <button data-page="examples">Examples</button>
+  </nav>
+
+
+  <div id="home" class="page active">
+    <h1>El Journal</h1>
+    <p>So far though, school has been going pretty well. 
+      <br>I'm keeping up with classes and my assignments, and I'm enjoying the experience overall. Below is a picture I took during my Natural Chicago class.<br></p>
+    <img src="image0 (6).jpeg" alt="A vivid pink-red leaf rests among green plants in a garden bed, surrounded by soil, grasses, and foliage. The close-up scene feels calm and natural." width="400" height="300" style="border: 5px solid rgb(13, 113, 55); border-radius: 10px;" class="center-image"/>
+  </div>
+
+
+  <div id="about" class="page">
+    <h1>About</h1>
+    <p>This is a journal of my school life that'll include info on my studies while in another country. </p>
+  </div>
+
+  
+  <div id="examples" class="page">
+    <h1>My Classes</h1>
+    <p>
+      <ul>
+        <li>Programming</li>
+        <a href="https://maliek15.github.io/" target="_blank">My GitHub Site with Projects</a>
+        <li>College Math</li>
+        <li>Nutrition</li>
+        <li>Natural Chicago</li>
+        <li>Writing</li>
+      </ul>
+    </p>
+    
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
